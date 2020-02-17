@@ -1,0 +1,14 @@
+<div class="card ml-2 mt-3 mb-3 w-50">
+  <div class="card-body">
+    <h5 class="card-title"><%= params[:question] %></h5>
+    <h6 class="card-subtitle mb-2 text-muted">--You</h6>
+  </div>
+</div>
+<div class="card ml-2 mt-3 mb-3 w-50 bg-info">
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold"><%= @answer %></h5>
+    <h6 class="card-subtitle mb-2">--Your Coach</h6>
+  </div>
+</div>
+
+<%= link_to "Ask a new question", ask_path, class:  "btn btn-info m-3" %>
